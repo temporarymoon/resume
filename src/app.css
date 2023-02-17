@@ -1,0 +1,136 @@
+#root {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-template-rows: 1fr 22fr;
+
+  gap: 1.5rem;
+  padding: 1.5rem;
+
+  height: 100%;
+  width: 100%;
+}
+
+#root > .cell {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+#root > #name-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root > .cell > #big-name {
+  text-transform: uppercase;
+  text-align: justify;
+  font-weight: 1000;
+  font-size: 0.85cm;
+  font-family: sans-serif;
+  width: 100%;
+  vertical-align: middle;
+}
+
+#root > #contact {
+  display: grid;
+  grid-template-columns: 2em auto;
+  grid-template-rows: 1fr 1fr;
+  text-decoration: none;
+}
+
+#root a {
+  text-decoration: none;
+  color: unset;
+}
+
+#root > #contact > .contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root > .cell > .container > .header {
+  margin-top: 0.05cm;
+  width: 100%;
+  font-size: 0.6cm;
+  font-weight: 550;
+  font-family: sans-serif;
+  padding-bottom: 0.1cm;
+  border-bottom: 2px solid black;
+  color: #444444;
+  text-transform: uppercase;
+}
+
+#root > .cell > .container > .element {
+  border-bottom: 1px dashed black;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+#root > .cell > .container > .element:last-child {
+  border-bottom: none;
+}
+
+#root > .cell > .container > .element > .element-title {
+  font-size: 0.6cm;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-family: sans-serif;
+  font-weight: 450;
+}
+
+#root > .cell > .container > .element > .element-subtitle {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.35cm;
+  font-family: sans-serif;
+  font-weight: 390;
+}
+
+#root > .cell > .container > .element > .element-content {
+  margin-top: 0.25rem;
+  font-family: sans-serif;
+  text-align: justify;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+#root > .cell > .container > .element > .element-subtitle > .fa {
+  margin-right: 1em;
+  color: #666666;
+}
+
+#root > .cell > #education > .element > .element-title {
+  font-size: 0.55cm;
+}
+
+#root > .cell > .container > #skills {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#root > .cell > .container > #skills > .skill-level {
+  text-transform: uppercase;
+  text-align: justify;
+  font-weight: 550;
+  font-size: 0.4cm;
+  font-family: sans-serif;
+}
+
+#root > .cell > .container > #skills > .skill-contents {
+  font-weight: 450;
+  font-size: 0.37cm;
+  font-family: sans-serif;
+}
+
+.spacing {
+  flex-grow: 1;
+}
