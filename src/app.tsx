@@ -1,5 +1,9 @@
 import "./app.css";
 
+function Commented(props: any) {
+  return <> </>;
+}
+
 export function App() {
   return (
     <div id="root">
@@ -21,6 +25,21 @@ export function App() {
       <div class="cell">
         <div class="container">
           <div class="header">Personal Projects</div>
+          <div class="element">
+            <div class="element-title">
+              <a href="https://github.com/Mateiadrielrafael/million-prescient-trees">
+                Million prescient trees
+              </a>
+            </div>
+            <div class="element-content">
+              MPT is an AI for the card game "echo", and the project I am currently hacking on. Written in{" "}
+              <strong> rust</strong>, MPT makes use of tehniques such as custom
+              allocators to try and achieve peak performance. Furthermore, echo is a hidden
+              information game with a surprisingly large game tree. To tackle 
+              these challenges, I had to learn about (and implement) <strong>counterfactual
+              regret minimization</strong>, together with a series of novel domain-specific optimizations.
+            </div>
+          </div>
           <div class="element">
             <div class="element-title">
               <a href="https://github.com/lunarcast/lunarbox">Lunarbox</a>
@@ -95,20 +114,22 @@ export function App() {
               implemented using a handmade purescript graphics library.
             </div>
           </div>
-          <div class="element">
-            <div class="element-title">
-              <a href="https://github.com/lunarcast/lunarpie">
-                Type system implementations
-              </a>
+          <Commented>
+            <div class="element">
+              <div class="element-title">
+                <a href="https://github.com/lunarcast/lunarpie">
+                  Type system implementations
+                </a>
+              </div>
+              <div class="element-content">
+                I have spent a significant amount of time learning about the
+                implementation of type systems for programming languages. I have
+                implemented various such systems, ranging from Hindley–Milner
+                type inference, rank-n types, up to basic dependently typed
+                systems with implicit arguments.
+              </div>
             </div>
-            <div class="element-content">
-              I have spent a significant amount of time learning about the
-              implementation of type systems for programming languages. I have
-              implemented various such systems, ranging from Hindley–Milner type
-              inference, rank-n types, up to basic dependently typed systems
-              with implicit arguments.
-            </div>
-          </div>
+          </Commented>
         </div>
         <div class="spacing" />
       </div>
@@ -134,7 +155,7 @@ export function App() {
             <div class="element-title">Visonum</div>
             <div class="element-subtitle">
               <i class="fa fa-calendar"></i>
-              Summer of 2022 – present
+              June 2022 – April 2023
             </div>
             <div class="element-content">
               As a <strong>Purescript</strong> software engineer, I worked on
@@ -171,9 +192,11 @@ export function App() {
               Purescript – TypeScript – NodeJs – Neovim
             </div>
             <div class="skill-level">Intermediate</div>
-            <div class="skill-contents">Elm – Nix – Haskell – Python – Lua</div>
+            <div class="skill-contents">
+              Rust – Elm – Nix – Haskell – Latex - Python – Lua
+            </div>
             <div class="skill-level">Beginner</div>
-            <div class="skill-contents">Rust – F# – Lean – Idris</div>
+            <div class="skill-contents">F# – Lean – Idris</div>
           </div>
         </div>
         <div class="container">
