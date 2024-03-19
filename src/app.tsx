@@ -1,8 +1,10 @@
 import "./app.css";
 
-function Commented(props: any) {
+function Commented(_props: any) {
   return <> </>;
 }
+
+const email = "hi@moonythm.dev";
 
 export function App() {
   return (
@@ -20,26 +22,31 @@ export function App() {
         <div class="contact-icon">
           <i class="fa fa-envelope"></i>
         </div>
-        <a href="mailto:rafaeladriel11@gmail.com">rafaeladriel11@gmail.com</a>
+        <a href={`mailto:${email}`}>{email}</a>
       </div>
       <div class="cell">
         <div class="container">
           <div class="header">Personal Projects</div>
-          <div class="element">
-            <div class="element-title">
-              <a href="https://github.com/Mateiadrielrafael/million-prescient-trees">
-                Million prescient trees
-              </a>
+          <Commented>
+            <div class="element">
+              <div class="element-title">
+                <a href="https://github.com/Mateiadrielrafael/million-prescient-trees">
+                  Million prescient trees
+                </a>
+              </div>
+              <div class="element-content">
+                MPT is an AI for the card game "echo", and the project I am
+                currently hacking on. Written in <strong> rust</strong>, MPT
+                makes use of techniques such as custom allocators to try and
+                achieve peak performance. Furthermore, echo is a hidden
+                information game with a surprisingly large game tree. To tackle
+                these challenges, I had to learn about (and implement){" "}
+                <strong>counterfactual regret minimization</strong>, together
+                with a series of novel domain-specific optimizations.
+              </div>
             </div>
-            <div class="element-content">
-              MPT is an AI for the card game "echo", and the project I am currently hacking on. Written in{" "}
-              <strong> rust</strong>, MPT makes use of tehniques such as custom
-              allocators to try and achieve peak performance. Furthermore, echo is a hidden
-              information game with a surprisingly large game tree. To tackle 
-              these challenges, I had to learn about (and implement) <strong>counterfactual
-              regret minimization</strong>, together with a series of novel domain-specific optimizations.
-            </div>
-          </div>
+          </Commented>
+
           <div class="element">
             <div class="element-title">
               <a href="https://github.com/lunarcast/lunarbox">Lunarbox</a>
@@ -47,9 +54,9 @@ export function App() {
             <div class="element-content">
               Lunarbox is a{" "}
               <strong>
-                strongly-typed visual functional programming langauge
+                strongly-typed visual functional programming language
               </strong>{" "}
-              I made in Purescript. It features an interactive editor, type
+              I wrote in Purescript. It features an interactive editor, type
               inference, a basic linter & optimizer, a color-encoding of types,
               cloud sync, an admin interface and an example & tutorial system.
             </div>
@@ -91,7 +98,7 @@ export function App() {
               </a>
             </div>
             <div class="element-content">
-              Doffycup is a{" "}
+              Doffycup is an{" "}
               <strong>interactive programming teaching tool</strong> me and a
               friend developed in the final round of the infoeducatie contest.
               The project combines a live-updating, scratch-like, read-only code
@@ -108,7 +115,7 @@ export function App() {
             </div>
             <div class="element-content">
               Moonlog is a simple implementation of an indentation-based logic
-              programming langauge using PureScript. During the summer of 2021,
+              programming language using PureScript. During the summer of 2021,
               I went a step further and created Lunarlog — a{" "}
               <strong>visual logic based programming language</strong>{" "}
               implemented using a handmade purescript graphics library.
@@ -130,6 +137,19 @@ export function App() {
               </div>
             </div>
           </Commented>
+        </div>
+        <div class="container">
+          <div class="header">Activities</div>
+          <div class="element">
+            <div class="element-title">Infoeducatie</div>
+            <div class="element-content">
+              Infoeducatie is a country-wide programming contest in Romania. The
+              contestants create a project they present to a group of judges
+              across multiple phases. The top 5 contestants across a list of
+              predefined categories get to compete in a 24h hackaton. I have
+              competed and <strong>won second place 3 years in a row</strong>.
+            </div>
+          </div>
         </div>
         <div class="spacing" />
       </div>
@@ -164,6 +184,20 @@ export function App() {
               and integrating PureScript into existing Javascript codebases.
             </div>
           </div>
+          <div class="element">
+            <div class="element-title">Feram</div>
+            <div class="element-subtitle">
+              <i class="fa fa-calendar"></i>
+              August 2023 – present
+            </div>
+            <div class="element-content">
+              As a <strong>Haskell</strong> and <strong>elm</strong> software
+              engineer, I worked on multiple features of Airsequel — a SQL
+              management software. In particular, I implemented a custom cloud
+              function system supporting multiple runtimes, which taught me
+              about sandboxing and everything that entails.
+            </div>
+          </div>
         </div>
         <div class="container" id="education">
           <div class="header">Education</div>
@@ -193,23 +227,10 @@ export function App() {
             </div>
             <div class="skill-level">Intermediate</div>
             <div class="skill-contents">
-              Rust – Elm – Nix – Haskell – Latex - Python – Lua
+              Rust – Elm – Nix – Haskell – Python – Lua - Latex - Typst
             </div>
             <div class="skill-level">Beginner</div>
             <div class="skill-contents">F# – Lean – Idris</div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="header">Activities</div>
-          <div class="element">
-            <div class="element-title">Infoeducatie</div>
-            <div class="element-content">
-              Infoeducatie is a country-wide programming contest in Romania. The
-              contestants create a project they present to a group of judges
-              across multiple phases. The top 5 contestants across a list of
-              predefined categories get to compete in a 24h hackaton. I have
-              competed and <strong>won second place 3 years in a row</strong>.
-            </div>
           </div>
         </div>
         <div class="spacing" />
