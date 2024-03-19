@@ -138,20 +138,6 @@ export function App() {
             </div>
           </Commented>
         </div>
-        <div class="container">
-          <div class="header">Activities</div>
-          <div class="element">
-            <div class="element-title">Infoeducatie</div>
-            <div class="element-content">
-              Infoeducatie is a country-wide programming contest in Romania. The
-              contestants create a project they present to a group of judges
-              across multiple phases. The top 5 contestants across a list of
-              predefined categories get to compete in a 24h hackaton. I have
-              competed and <strong>won second place 3 years in a row</strong>.
-            </div>
-          </div>
-        </div>
-        <div class="spacing" />
       </div>
       <div class="cell">
         <div class="container">
@@ -192,8 +178,9 @@ export function App() {
             </div>
             <div class="element-content">
               As a <strong>Haskell</strong> and <strong>elm</strong> software
-              engineer, I worked on multiple features of Airsequel — a SQL
-              management software. In particular, I implemented a custom cloud
+              engineer, I worked on multiple features of Airsequel, which is a
+              SQL management service that generates GraphQL apis for the
+              underlying data. In particular, I implemented a custom cloud
               function system supporting multiple runtimes, which taught me
               about sandboxing and everything that entails.
             </div>
@@ -218,6 +205,24 @@ export function App() {
             <div class="element-content">University of Groningen</div>
           </div>
         </div>
+      </div>
+      <div class="cell">
+        <div class="container">
+          <div class="header">Activities</div>
+          <div class="element">
+            <div class="element-title">Infoeducatie</div>
+            <div class="element-content">
+              Infoeducatie is a country-wide programming contest in Romania. The
+              contestants create a project, which then they present to a group
+              of judges across multiple phases. The top 5 contestants for each
+              predefined category go on to compete in a 24h hackaton. I have
+              competed and <strong>won second place 3 years in a row</strong>.
+            </div>
+          </div>
+        </div>
+        <div class="spacing" />
+      </div>
+      <div class="cell">
         <div class="container">
           <div class="header">Skills</div>
           <div id="skills">

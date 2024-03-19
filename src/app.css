@@ -1,7 +1,7 @@
 #root {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
-  grid-template-rows: 1fr 22fr;
+  grid-template-rows: 1fr 14fr 8fr;
 
   gap: 1.5rem;
   padding: 1.5rem;
@@ -109,7 +109,7 @@
 #root > .cell > .container > #skills {
   margin-top: 0.5rem;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   width: 100%;
   display: grid;
   grid-template-columns: auto 1fr;
