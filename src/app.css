@@ -64,13 +64,12 @@
 }
 
 #root > .cell > .container > .element {
-  border-bottom: 1px dashed black;
-  padding-bottom: 1rem;
   width: 100%;
+  padding-bottom: 1rem;
 }
 
-#root > .cell > .container > .element:last-child {
-  border-bottom: none;
+#root > .cell > .container > .element:not(:last-child) {
+  border-bottom: 1px dashed black;
 }
 
 #root > .cell > .container > .element > .element-title {
@@ -113,7 +112,8 @@
   width: 100%;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 1rem;
+  row-gap: 0.6rem;
+  column-gap: 1rem;
   margin-bottom: 1rem;
 }
 
